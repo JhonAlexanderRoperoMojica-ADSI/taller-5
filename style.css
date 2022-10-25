@@ -1,0 +1,31 @@
+*{
+    margin: 15px auto;
+    font-size: 1em;
+    font-family: cursive;
+}
+
+.container{
+    color: white;
+    background-color: blue;
+    height: 150px;
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px black;
+    text-align: center;
+}
+
+input{
+    padding: auto;
+    box-shadow: 10px 10px 20px black;
+    margin: 15px;
+}
+
+h1{
+    font-size: 2em;
+}
+
+.btn:hover{
+    color: white;
+    background-color: blueviolet;
+    transition: 1s;
+}
