@@ -4,17 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>punto 1</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
 </head>
 <body>
     <div class="container">
-        <form id="form">
-            <input id="dato" class="input-dato" type="text" placeholder="ingrese un numero a sumar">
-            <input class="btn" type="submit" value="Sumar"></input>
+        <h1>Crear un programa que permita al usuario ingresar los montos de las compras de un cliente (se
+            desconoce la cantidad de datos que cargará, la cual puede cambiar en cada ejecución), cortando el
+            ingreso de datos cuando el usuario ingrese el monto 0.
+            Si ingresa un monto negativo, no se debe procesar y se debe pedir que ingrese un nuevo monto. Al
+            finalizar, informar el total a pagar teniendo que cuenta que, si las ventas superan el total de $10000,
+            se le debe aplicar un 10% de descuento.
+        </h1>
+        <form id="form" class="form">
+                <input type="number" name="monto" class="numero" id="numero1" placeholder="Ingrese el numero de la venta" required readonly>
+                <input type="submit" name="boton" id="boton" class="btn">       
         </form>
-        <h1 id="res">Suma: </h1>
+
+            <form class="contenedor" id="contenedor">
+                    <h1 class="contenedor-titulo">El resultado es: </h1>
+                    <input type="submit" name="cerrar" value="Eliminar" class="btn" id="cerrar">
+                    <h1 class="resultado" id="resultado"></h1>
+            </form>
     </div>
+
 </body>
 </html>
